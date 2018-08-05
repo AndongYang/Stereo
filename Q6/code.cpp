@@ -7,14 +7,17 @@
 #include <opencv2/highgui/highgui.hpp>  
 #include <opencv2/imgproc.hpp> 
 
-/*Created by yangandong*/
+/*Created by YangAnDong*/
+
+const string g_read_xml_path = "../../XML/left_photo_list.xml";
+const string g_save_xml_path = "F:/learn/baoyan/Stereo/camera_matrix.xml";
 
 using namespace cv;
 using namespace std;
 
 vector<string> get_file_list() {
 	vector<string> file_list;
-	const string file_name = "../../XML/left_photo_list.xml";
+	const string file_name = g_read_xml_path;
 
 	FileStorage fs(file_name, FileStorage::READ);
 	if (!fs.isOpened())
@@ -101,7 +104,7 @@ void cal_calibratecamera(vector<string> &file_list, Mat &cameraMatrix,
 
 	//Save camera matrix
 	cout << "save camera matrix and distCoeffs matrix" << endl;
-	FileStorage fs("F:/learn/baoyan/Stereo/camera_matrix.xml", FileStorage::WRITE);
+	FileStorage fs(g_save_xml_path, FileStorage::WRITE);
 	if (!fs.isOpened())
 	{
 		cerr << "failed to open " << endl;
