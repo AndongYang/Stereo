@@ -7,13 +7,13 @@
 #include <opencv2/highgui/highgui.hpp>  
 #include <opencv2/imgproc.hpp> 
 
-/*Created by YangAnDong*/
-
-const string g_read_xml_path = "../../XML/left_photo_list.xml";
-const string g_save_xml_path = "F:/learn/baoyan/Stereo/camera_matrix.xml";
-
 using namespace cv;
 using namespace std;
+
+/*Created by yangandong*/
+
+const string g_read_xml_path = "left_photo_list.xml";
+const string g_save_xml_path = "camera_matrix.xml";
 
 vector<string> get_file_list() {
 	vector<string> file_list;
