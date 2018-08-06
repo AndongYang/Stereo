@@ -10,7 +10,7 @@
 using namespace cv;
 using namespace std;
 
-/*Created by yangandong*/
+/*Created by YangAnDong*/
 
 const string g_read_xml_path = "left_photo_list.xml";
 const string g_save_xml_path = "camera_matrix.xml";
@@ -118,9 +118,9 @@ void cal_calibratecamera(vector<string> &file_list, Mat &cameraMatrix,
 int main()
 {  
 	Mat cameraMatrix = Mat(3, 3, CV_32FC1, Scalar::all(0));        // Intrinsic matrix
-	Mat distCoeffs = Mat(1, 5, CV_32FC1, Scalar::all(0));          // distortion factor[k1,k2,k3,p1,p2]
+	Mat distCoeffs = Mat(1, 5, CV_32FC1, Scalar::all(0));          // Distortion factor[k1,k2,k3,p1,p2]
 	vector<Mat> rvecsMat;                                          // Extrinsic parameters R
-	vector<Mat> tvecsMat;										   // Extrinsic parameters T
+	vector<Mat> tvecsMat;					       // Extrinsic parameters T
 	
 	vector<string> file_list = get_file_list();
 	cal_calibratecamera(file_list, cameraMatrix, distCoeffs, rvecsMat, tvecsMat);
