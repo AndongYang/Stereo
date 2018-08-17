@@ -14,7 +14,7 @@ using namespace std;
 
 const string g_read_photo_list_path_l = "left_photo_list.xml";		//左相机拍摄的图片列表
 const string g_read_photo_list_path_r = "right_photo_list.xml";		//右相机拍摄的图像列表
-const string g_read_path = "res.xml";								//存放了stereoCalibrate函数输出的左右相机矩阵，畸变参数，转换矩阵R，T
+const string g_read_path = "stereoCalibrate_res.xml";			//存放了stereoCalibrate函数输出的左右相机矩阵，畸变参数，转换矩阵R，T
 
 //获取stereoCalibrate函数输出的转换矩阵与各个相机参数
 bool get_camera_matrix_and_distCoeffs(Mat &camera_matrix_l, Mat &distortion_coeffs_l,
