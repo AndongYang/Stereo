@@ -111,9 +111,6 @@ void go_rectify(vector<string> &file_list_l, vector<string> &file_list_r,
 		rectify_img_l.copyTo(can_left);
 		rectify_img_r.copyTo(can_right);
 
-		//rectangle(can_left, validroi_l, Scalar(255, 0, 0), 3, 8);
-		//rectangle(can_right, validroi_r, Scalar(255, 0, 0), 3, 8);
-
 		/*画上对应的线条*/
 		for (int i = 0; i < canvas.rows; i += 16)
 			line(canvas, Point(0, i), Point(canvas.cols, i), Scalar(0, 255, 0), 1, 8);
