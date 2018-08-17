@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<camera_matrix_l type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    5.3392448824490555e+02 0. 3.2882415473225944e+02 0.
+    5.2857636791543075e+02 2.3724236749801486e+02 0. 0. 1.</data></camera_matrix_l>
+<distortion_coeffs_l type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>14</cols>
+  <dt>d</dt>
+  <data>
+    -2.5847772034680772e-01 -1.2969221479589088e-01 0. 0. 0. 0. 0.
+    -4.0469016052501694e-01 0. 0. 0. 0. 0. 0.</data></distortion_coeffs_l>
+<camera_matrix_r type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    5.3392448824490555e+02 0. 3.1406466878777712e+02 0.
+    5.2857636791543075e+02 2.4222537575896260e+02 0. 0. 1.</data></camera_matrix_r>
+<distortion_coeffs_r type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>14</cols>
+  <dt>d</dt>
+  <data>
+    -2.6275800467499466e-01 -1.3243222533386107e-02 0. 0. 0. 0. 0.
+    -1.9692458392892120e-01 0. 0. 0. 0. 0. 0.</data></distortion_coeffs_r>
+<R type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    9.9997023317284439e-01 4.7391709238191288e-03 6.0887623703132481e-03
+    -4.8084895383195816e-03 9.9992321737371692e-01
+    1.1420936273104082e-02 -6.0341690900393569e-03
+    -1.1449874058227049e-02 9.9991624108594390e-01</data></R>
+<T type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -3.3425631768202546e+00 4.6707313885718263e-02
+    2.2128673628614426e-03</data></T>
+<E type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    9.9997023317284439e-01 4.7391709238191288e-03 6.0887623703132481e-03
+    -4.8084895383195816e-03 9.9992321737371692e-01
+    1.1420936273104082e-02 -6.0341690900393569e-03
+    -1.1449874058227049e-02 9.9991624108594390e-01</data></E>
+<F type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>1</cols>
+  <dt>d</dt>
+  <data>
+    -3.3425631768202546e+00 4.6707313885718263e-02
+    2.2128673628614426e-03</data></F>
+</opencv_storage>
