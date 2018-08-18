@@ -120,10 +120,10 @@ void cal_calibratecamera(vector<string> &file_list, Mat &cameraMatrix,
 
 int main()
 {  
-	Mat cameraMatrix = Mat(3, 3, CV_32FC1, Scalar::all(0));        // 相机内参矩阵
+	Mat cameraMatrix = Mat(3, 3, CV_32FC1, Scalar::all(0));        	// 相机内参矩阵
 	Mat distCoeffs = Mat(1, 14, CV_32FC1, Scalar::all(0));          // 畸变参数[k1,k2,k3,p1,p2]
-	vector<Mat> rvecsMat;                                          // 旋转向量 R
-	vector<Mat> tvecsMat;										   // 位移向量 T
+	vector<Mat> rvecsMat;                                          	// 旋转向量 R
+	vector<Mat> tvecsMat;						// 位移向量 T
 	
 	vector<string> file_list = get_file_list();
 	cal_calibratecamera(file_list, cameraMatrix, distCoeffs, rvecsMat, tvecsMat);
