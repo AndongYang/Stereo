@@ -12,8 +12,8 @@ using namespace std;
 
 /*Created by yangandong*/
 
-const string g_read_photo_list_path_l = "left_photo_list.xml";				//左相机拍摄的图片列表
-const string g_read_photo_list_path_r = "right_photo_list.xml";				//右相机拍摄的图像列表
+const string g_read_photo_list_path_l = "left_photo_list.xml";			//左相机拍摄的图片列表
+const string g_read_photo_list_path_r = "right_photo_list.xml";			//右相机拍摄的图像列表
 const string g_read_stereoCalibrate_res_path = "stereoCalibrate_res.xml";	//存放了stereoCalibrate函数输出的左右相机矩阵，畸变参数，转换矩阵R，T
 
 //获取stereoCalibrate函数输出的转换矩阵与各个相机参数
@@ -106,7 +106,7 @@ void go_rectify(vector<string> &file_list_l, vector<string> &file_list_r,
 		img_l.copyTo(can_left);
 		img_r.copyTo(can_right);
 		imshow("Before Rectify", canvas);
-		imwrite("C:/Users/AnDon/Desktop/temp/1.png",canvas);
+		imwrite("Before_rectify.png",canvas);
 		waitKey(500);
 
 		rectify_img_l.copyTo(can_left);
@@ -117,8 +117,10 @@ void go_rectify(vector<string> &file_list_l, vector<string> &file_list_r,
 			line(canvas, Point(0, i), Point(canvas.cols, i), Scalar(0, 255, 0), 1, 8);
 
 		imshow("Rectified", canvas);
-		imwrite("C:/Users/AnDon/Desktop/temp/2.png", canvas);
+		imwrite("Rectified.png", canvas);
 		waitKey(500);
+		
+		break;
 	}
 	cout << "Start go_rectify completed." << endl;
 }
