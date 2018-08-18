@@ -1,0 +1,9 @@
+在代码文件code.cpp中有5个路径：
+1. g_read_camera_matrix_path_l:存储了左相机的相机矩阵与14维畸变参数
+2. g_read_camera_matrix_path_r:存储了右相机的相机矩阵与14维畸变参数
+3. g_read_photo_list_path_l:存储了待处理的左相机拍摄图片列表
+4. g_read_photo_list_path_r:存储了待处理的右相机拍摄图片列表
+5. g_save_path:指向立体标定结果输出位置
+
+运行时将camera_matrix_r.xml，camera_matrix_l.xml，left_photo_list.xml，right_photo_list.xml和对应的待处理图片放入工程文件夹。
+立体标定结果会输出至工程文件夹的stereoCalibrate_res.xml中。
