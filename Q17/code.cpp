@@ -12,7 +12,7 @@ using namespace std;
 
 /*Created by yangandong*/
 
-const string g_read_photo_path = "rectify_img.xml";				//存放了经过校正的图片对
+const string g_read_photo_path = "rectify_img.xml";		//存放了经过校正的图片对
 
 //获取待处理图像对
 bool get_photo(Mat &rectify_img_l, Mat &rectify_img_r) {
@@ -72,7 +72,6 @@ void go_disparity_maps(Mat &rectify_img_l, Mat &rectify_img_r) {
 	rectify_img_l.copyTo(can_left);
 	rectify_img_r.copyTo(can_right);
 	imshow("Origin photos", canvas);
-	imwrite("C:/Users/AnDon/Desktop/temp/Q17_1.png", canvas);
 	waitKey(500);
 
 	//显示视差图
@@ -82,12 +81,6 @@ void go_disparity_maps(Mat &rectify_img_l, Mat &rectify_img_r) {
 	//显示结果图像
 	normalize(res_temp, res, 0, 255, NORM_MINMAX, CV_8UC1);
 	imshow("disparity maps", res);
-	
-	Mat res_2;
-	res_temp.convertTo(res_2, CV_8U);
-	imshow("disparity maps_2", res_2);
-
-	imwrite("C:/Users/AnDon/Desktop/temp/Q17_2.png", res);
 	waitKey(0);
 
 	cout << "Go_disparity_maps completed" << endl;
