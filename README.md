@@ -1,4 +1,4 @@
 # Stereo_report
-The code file is named after the question title.
+The folder is named after the question title.
 
 Created by AnDong Yang
