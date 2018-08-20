@@ -106,7 +106,7 @@ void go_rectify(vector<string> &file_list_l, vector<string> &file_list_r,
 		img_l.copyTo(can_left);
 		img_r.copyTo(can_right);
 		imshow("Before Rectify", canvas);
-		imwrite("Before_rectify.png",canvas);
+		//imwrite("Before_rectify.png",canvas);
 		waitKey(500);
 
 		rectify_img_l.copyTo(can_left);
@@ -117,8 +117,8 @@ void go_rectify(vector<string> &file_list_l, vector<string> &file_list_r,
 			line(canvas, Point(0, i), Point(canvas.cols, i), Scalar(0, 255, 0), 1, 8);
 
 		imshow("Rectified", canvas);
-		imwrite("Rectified.png", canvas);
-		waitKey(500);
+		//imwrite("Rectified.png", canvas);
+		waitKey(0);
 		
 		break;
 	}
