@@ -80,7 +80,7 @@ void go_disparity_maps(Mat &rectify_img_l, Mat &rectify_img_r) {
 	res_temp.convertTo(res_temp, CV_32F, 255 / (numberOfDisparities*16.));
 	//显示结果图像
 	normalize(res_temp, res, 0, 255, NORM_MINMAX, CV_8UC1);
-	imshow("disparity maps", res);
+	imshow("Disparity maps", res);
 	waitKey(0);
 
 	cout << "Go_disparity_maps completed" << endl;
